@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Reservation System</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <a href="#">
+    <span class="glyphicon glyphicon-home"></span>
+  </a>
+  <a href="#">About Us</a>
+  <a href="#">Menu</a>
+  <a href="#">Contact US</a>
+  <img src="images/nav.jpg"/>
+  <p> Restauarnt Reservation System</p>
+
+</nav>
+
+<div class="outer">
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#guest">Guest</a></li>
+    <li><a data-toggle="pill" href="#admin">Admin</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="guest" class="tab-pane fade in active">
+      <div id="reservation">
+        <h1>Reservation</h1>
+        <form role="form">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="Date">Date</label>
+                <input type="date" class="form-control" id="Date" placeholder="MM/DD/YYYY" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="Time">Time</label>
+                <input type="time" class="form-control" id="Time" placeholder="HH:MM" required>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="Phone">Phone</label>
+            <input type="tel" class="form-control" id="Phone" placeholder="(XXX)XXX-XXXX">
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" class="form-control" id="Email" placeholder="abc@ymail.com">
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label for="guests">No. of Guests</label>
+                <input type="number" class="form-control" id="guests" placeholder="# Guests">
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="form-group">
+                <label for="reserveComments">Further Comments</label>
+                <input type="email" class="form-control" id="reserveComments">
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn large-btn btn-primary">Reserve</button>
+            <button type="button" class="btn btn-link">Modify Reservation</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="admin" class="tab-pane fade">
+      <div id="login">
+
+        <h1>Log in</h1>
+        <form>
+          <div class="form-group">
+            <label for="ownerEmail">Email</label>
+            <input type="email" class="form-control" id="ownerEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="ownerPassword">Password</label>
+            <input type="password" class="form-control" id="ownerPassword" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn large-btn btn-primary">Login</button>
+            </div>
+        </form>
+      </div>
+    </div>
+</div>
+  </div>
+  </div>
+<footer></footer>
+</body>
+</html>

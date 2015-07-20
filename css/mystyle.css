@@ -1,0 +1,241 @@
+
+/*html {
+
+  background-image:  url(rest.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+} */
+
+nav {
+  padding: 1em;
+ /* background: url(rest.jpg) no-repeat center center fixed;*/
+  background-color: maroon;
+
+  width: 100em;
+  height: 4em;
+}
+
+
+nav a  { text-decoration: none; color: #fff; padding: 1em; text-shadow: 2px 2px 1px rgba(195, 17, 27, 0.7); }
+nav a:hover { background: rgba(232, 218, 204, 0.7); }
+nav a  { text-decoration: none; color: #fff; padding: 1em; text-shadow: 2px 2px 1px rgba(178, 156, 25, 0.7); transition: background 1s; }
+nav img {
+  width:70px;
+  height:70px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+nav p{
+  text-align: center;
+  color: floralwhite;
+  font-size: 30px;
+  text-shadow: 2px 2px 1px rgba(195, 17, 27, 0.7);
+  font-family:Helvetica;
+  transition: background 1s;
+  margin-top: -25px;
+  font-style: italic;
+}
+.logout
+{
+  top: 0px;
+  right: 0px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+/**{margin:0;padding:0;}*/
+
+body{
+
+  font-family:'Open Sans',sans-serif;
+  background-image:  url(../images/rest.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+/*
+.outer{
+  background-image:  url(rest.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+
+}*/
+
+
+
+.button{
+  width:100px;
+  background:#3399cc;
+  display:block;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.button:hover{
+  background:#2288bb;
+}
+
+#login,#loginProfile,#loginContacts,#loginSettings,#reservation{
+  width:400px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+
+
+
+#login,#loginProfile,#loginContacts,#loginSettings,#reservation h1{
+  background:#3399cc;
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+#reservationsOwner h1{
+  background:#3399cc;
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+#reservationsOwner{
+  width:400px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+#seating h1{
+  background:#3399cc;
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+form{
+  background:#f0f0f0;
+  padding:6% 4%;
+
+
+}
+
+input[type="email"],input[type="password"],input[type ="text"],input[type="date"],input[type="number"]{
+  width:92%;
+  background:#fff;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;
+
+
+}
+
+input[type="submit"]{
+  width:100%;
+  background:#3399cc;
+  border:0;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:100%;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+input[type="submit"]:hover{
+  background:#2288bb;
+}
+
+input { width: 200px; border: 1px solid #000; padding: 5px; }
+label{
+  color: black;
+
+}
+h2{
+  color: white;
+}
+
+.pagination
+{
+  position: absolute;
+  right: 2px;
+}
+
+
+.table>tbody>tr>td, .table>thead>tr>th {
+  vertical-align: middle;
+  color:black;
+}
+.table-hover>tbody{
+  background-color:lightslategrey;
+}
+
+#tab-reservation span.btn-text {
+  display: none;
+}
+
+.table>thead>tr>th{
+  color:white;
+}
+
+#seating >.container {
+  padding-left: 4px;
+  padding-right: 4px;
+  width: auto;
+}
+#seating > .seats {
+  width: 20px;
+  height: 120px;
+
+  margin: 10px auto;
+  padding-top: 20px;
+}
+#seating >.seats> p {
+  color: white;
+  margin: 4px auto;
+  width: 100px;
+  text-align: center;
+}
+#seating >.seats >p >.btn-link {
+  color: white;
+}
+@media (min-width: 512px) {
+  #tab-reservation span.btn-text {
+    display: inline;
+  }
+  .container {
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .tab-content {
+    padding: 40px;
+  }
+  ul.nav-tabs.nav-justified>li {
+    float: none;
+  }
+}
+@media (min-width: 1024px) {
+  ul.nav-tabs a span.tab-text {
+    display: inline;
+  }
+}

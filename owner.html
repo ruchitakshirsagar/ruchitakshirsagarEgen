@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Reservation System</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav>
+  <a href="#">
+  <span class="glyphicon glyphicon-home"></span>
+  </a>
+  <a href="#">About Us</a>
+  <a href="#">Menu</a>
+  <a href="#">Contact US</a>
+
+  <img src="images/nav.jpg"/>
+
+  <p> Restauarnt Reservation System</p>
+
+</nav>
+
+<div class="container">
+  <h2>Owner's Options</h2>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#reservationsOwner"> <span class="glyphicon glyphicon-calendar"></span> Reservations</a></li>
+    &nbsp;&nbsp;
+    <li><a data-toggle="pill" href="#seating"><span class="glyphicon glyphicon-th"></span> Seating</a></li>
+    &nbsp;&nbsp;
+    <li><a data-toggle="pill" href="#profile"><span class="glyphicon glyphicon-list"></span> Profile</a></li>
+    &nbsp;&nbsp;
+    <li><a data-toggle="pill" href="#settings"><span class="glyphicon glyphicon-cog"></span> App Settings</a></li>
+    &nbsp;&nbsp;
+    <li><a data-toggle="pill" href="#contacts"><span class="glyphicon glyphicon-user"></span> Contacts</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="reservationsOwner" class="tab-pane fade in active">
+      <h1>Reservation List</h1>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Reservation" id="inputSearch">
+        <div class="input-group-btn">
+          <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+      <ul class="pagination pull-right">
+        <li><a href="#">&laquo;</a>
+        </li>
+        <li class="active"><a href="#">1</a>
+        </li>
+        <li><a href="#">2</a>
+        </li>
+        <li><a href="#">3</a>
+        </li>
+        <li><a href="#">4</a>
+        </li>
+        <li><a href="#">5</a>
+        </li>
+        <li><a href="#">&raquo;</a>
+        </li>
+      </ul>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>CNF#</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>#</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>123</td>
+          <td>James</td>
+          <td>Augusty</td>
+          <td>7/18/2015 </td>
+          <td>1:30PM</td>
+          <td>4</td>
+          <td>
+            <button class="btn btn-primary" title="Open Details">
+              <span class="glyphicon glyphicon-share"></span>
+              <span class="btn-text">Details</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>James</td>
+          <td>Augusty</td>
+          <td>7/18/2015 </td>
+          <td>1:30PM</td>
+          <td>4</td>
+          <td>
+            <button class="btn btn-primary" title="Open Details">
+              <span class="glyphicon glyphicon-share"></span>
+              <span class="btn-text">Details</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>James</td>
+          <td>Augusty</td>
+          <td>7/18/2015 </td>
+          <td>1:30PM</td>
+          <td>4</td>
+          <td>
+            <button class="btn btn-primary" title="Open Details">
+              <span class="glyphicon glyphicon-share"></span>
+              <span class="btn-text">Details</span>
+            </button>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <div id="seating" class="tab-pane fade">
+     <h1>Seating</h1>
+      <div class="container">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Table#</th>
+            <th>Size</th>
+            <th>Status</th>
+            <th>Since</th>
+            <th>CNF#</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>4</td>
+            <td>Occupied</td>
+            <td>1:30PM</td>
+            <td>
+              <button type="button" class="btn btn-link">DA83CD</button>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>4</td>
+            <td>Available</td>
+            <td>-</td>
+            <td>
+              <span class="btn-filler"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>4</td>
+            <td>Occupied</td>
+            <td>1:30PM</td>
+            <td>
+              <button type="button" class="btn btn-link">DA83CD</button>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>4</td>
+            <td>Occupied</td>
+            <td>1:30PM</td>
+            <td>
+              <button type="button" class="btn btn-link">DA83CD</button>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+        </div>
+    </div>
+    <div id="profile" class="tab-pane fade">
+      <div id="loginProfile">
+
+        <h1>Log in</h1>
+        <form>
+          <div class="form-group">
+            <label for="ownerEmail">Email</label>
+            <input type="email" class="form-control" id="ownerEmailProfile" required>
+          </div>
+          <div class="form-group">
+            <label for="ownerPassword">Password</label>
+            <input type="password" class="form-control" id="ownerPasswordProfile" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn large-btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="settings" class="tab-pane fade">
+
+
+      <div id="loginSettings">
+
+        <h1>Log in</h1>
+        <form>
+          <div class="form-group">
+            <label for="ownerEmail">Email</label>
+            <input type="email" class="form-control" id="ownerEmailSettings" required>
+          </div>
+          <div class="form-group">
+            <label for="ownerPassword">Password</label>
+            <input type="password" class="form-control" id="ownerPasswordSettings" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn large-btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="contacts" class="tab-pane fade">
+      <div id="loginContacts">
+
+        <h1>Log in</h1>
+        <form>
+          <div class="form-group">
+            <label for="ownerEmail">Email</label>
+            <input type="email" class="form-control" id="ownerEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="ownerPassword">Password</label>
+            <input type="password" class="form-control" id="ownerPassword" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn large-btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
